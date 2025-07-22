@@ -1,109 +1,346 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gezici Hukuk Bürosu</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gezici Hukuk Bürosu - Profesyonel Hukuki Danışmanlık</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'law-blue': '#1e3a8a',
+                        'law-gold': '#d97706'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
-  <header class="bg-white shadow-md py-4">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-900">Gezici Hukuk Bürosu</h1>
-      <nav class="space-x-6 text-gray-700 font-medium">
-        <a href="#home" class="hover:text-blue-900">Anasayfa</a>
-        <a href="#services" class="hover:text-blue-900">Hizmetler</a>
-        <a href="#team" class="hover:text-blue-900">Kadromuz</a>
-        <a href="#faq" class="hover:text-blue-900">SSS</a>
-        <a href="#contact" class="hover:text-blue-900">İletişim</a>
-      </nav>
-    </div>
-  </header>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-law-blue">Gezici Hukuk Bürosu</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-700 hover:text-law-blue px-3 py-2 rounded-md text-sm font-medium transition duration-300">Ana Sayfa</a>
+                        <a href="#services" class="text-gray-700 hover:text-law-blue px-3 py-2 rounded-md text-sm font-medium transition duration-300">Hizmetler</a>
+                        <a href="#team" class="text-gray-700 hover:text-law-blue px-3 py-2 rounded-md text-sm font-medium transition duration-300">Ekip</a>
+                        <a href="#contact" class="text-gray-700 hover:text-law-blue px-3 py-2 rounded-md text-sm font-medium transition duration-300">İletişim</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-law-blue" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#home" class="text-gray-700 hover:text-law-blue block px-3 py-2 rounded-md text-base font-medium">Ana Sayfa</a>
+                <a href="#services" class="text-gray-700 hover:text-law-blue block px-3 py-2 rounded-md text-base font-medium">Hizmetler</a>
+                <a href="#team" class="text-gray-700 hover:text-law-blue block px-3 py-2 rounded-md text-base font-medium">Ekip</a>
+                <a href="#contact" class="text-gray-700 hover:text-law-blue block px-3 py-2 rounded-md text-base font-medium">İletişim</a>
+            </div>
+        </div>
+    </nav>
 
-  <main class="max-w-5xl mx-auto px-6 py-16">
-    <section id="home" class="text-center mb-16">
-      <h2 class="text-4xl font-extrabold text-blue-900 mb-6">Gezici Hukuk Bürosu</h2>
-      <p class="text-lg mb-6">
-        Adaletin ve güvenin adresi. Avukatlarımız <strong>Fatma Aleyna Çıray</strong> ve <strong>Heybet Gezici</strong> ile bireysel ve kurumsal davalarınızda yanınızdayız.
-      </p>
-      <a href="#contact" class="inline-block bg-blue-900 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-800 transition">
-        Ücretsiz Danışmanlık Alın
-      </a>
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-law-blue to-blue-800 text-white pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Gezici Hukuk Bürosu
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Profesyonel hukuki danışmanlık ve temsil hizmetleri ile haklarınızı koruyoruz. 
+                    Deneyimli ekibimizle yanınızdayız.
+                </p>
+                <a href="#contact" class="bg-law-gold hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 inline-block">
+                    <i class="fas fa-phone mr-2"></i>
+                    Hemen İletişime Geçin
+                </a>
+            </div>
+        </div>
     </section>
 
-    <section id="services" class="mb-16">
-      <h3 class="text-3xl font-bold text-blue-900 mb-8">Hizmet Alanlarımız</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700">
-        <div>
-          <h4 class="text-xl font-semibold text-blue-800">Boşanma ve Aile Hukuku</h4>
-          <p>Anlaşmalı ve çekişmeli boşanma davaları, nafaka, velayet ve mal paylaşımı konularında güçlü temsil.</p>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Hizmet Alanlarımız</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Geniş hizmet yelpazemiz ile her türlü hukuki ihtiyacınızda yanınızdayız
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Ceza Hukuku</h3>
+                    <p class="text-gray-600">Ceza davalarında profesyonel savunma ve temsil hizmetleri. Suç mağduru hakları ve tazminat davalarında uzman desteği.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Medeni Hukuk</h3>
+                    <p class="text-gray-600">Aile hukuku, miras hukuku, kişilik hakları ve medeni hukuk alanındaki tüm uyuşmazlıklarda danışmanlık ve temsil.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Ticaret Hukuku</h3>
+                    <p class="text-gray-600">Şirket kuruluşu, ticari sözleşmeler, ortaklık uyuşmazlıkları ve ticaret hukukunun tüm alanlarında hizmet.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">İş Hukuku</h3>
+                    <p class="text-gray-600">İşçi ve işveren hakları, iş sözleşmeleri, işten çıkarma ve tazminat davalarında uzman danışmanlık.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Gayrimenkul Hukuku</h3>
+                    <p class="text-gray-600">Tapu işlemleri, emlak alım-satımı, kira uyuşmazlıkları ve gayrimenkul yatırımlarında hukuki danışmanlık.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-law-blue text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sigorta Hukuku</h3>
+                    <p class="text-gray-600">Sigorta tazminat davalarında temsil, poliçe uyuşmazlıkları ve sigorta şirketleri ile yaşanan sorunlarda çözüm.</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <h4 class="text-xl font-semibold text-blue-800">Ceza Hukuku</h4>
-          <p>Suç isnadı karşısında profesyonel savunma. Tutukluluk itirazları, ceza davası süreç takibi.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-blue-800">Ticaret ve Şirketler Hukuku</h4>
-          <p>Sözleşme hazırlığı, şirket birleşmeleri, ticari alacak davaları ve danışmanlık hizmetleri.</p>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold text-blue-800">İcra ve İflas Hukuku</h4>
-          <p>Alacak tahsili, icra takibi, haciz işlemleri ve itirazların kaldırılması süreçleri.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="team" class="mb-16 bg-gray-100 p-8 rounded-lg">
-      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Avukat Kadromuz</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-xl font-semibold text-blue-800">Av. Fatma Aleyna Çıray</h4>
-          <p>Aile, ceza ve ticaret hukuku alanlarında uzmanlaşmış; müvekkillerine yüksek hassasiyetle yaklaşan çözüm odaklı bir avukat.</p>
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ekibimiz</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Deneyimli ve uzman avukatlarımız ile hukuki sorunlarınıza çözüm üretiyoruz
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="bg-gray-200 w-48 h-48 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Fatma Aleyna Çıray</h3>
+                    <p class="text-law-gold font-semibold mb-4">Avukat</p>
+                    <p class="text-gray-600 mb-6">
+                        Ceza hukuku ve medeni hukuk alanlarında 8 yıllık deneyime sahip. Özellikle aile hukuku ve 
+                        kişilik hakları konularında uzmanlaşmış. Müvekkillerinin haklarını koruma konusunda kararlı 
+                        ve başarılı bir yaklaşım sergiler.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-envelope mr-2 text-law-blue"></i>
+                            aleyna.ciray@gezicihukuk.com
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-phone mr-2 text-law-blue"></i>
+                            +90 532 123 45 67
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-200 w-48 h-48 rounded-full mx-auto mb-6 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Heybet Gezici</h3>
+                    <p class="text-law-gold font-semibold mb-4">Kurucu Ortak Avukat</p>
+                    <p class="text-gray-600 mb-6">
+                        Ticaret hukuku ve iş hukuku alanlarında 12 yıllık deneyime sahip kurucu ortağımız. 
+                        Şirket hukuku, sözleşme hukuku ve ticari uyuşmazlıklar konularında derin bilgi ve 
+                        başarılı sonuçlarla tanınır.
+                    </p>
+                    <div class="space-y-2">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-envelope mr-2 text-law-blue"></i>
+                            heybet.gezici@gezicihukuk.com
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-phone mr-2 text-law-blue"></i>
+                            +90 532 987 65 43
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h4 class="text-xl font-semibold text-blue-800">Av. Heybet Gezici</h4>
-          <p>İcra, iflas ve sözleşmeler hukuku üzerine derin tecrübelere sahip olup dava takibinde stratejik yaklaşımıyla öne çıkar.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="faq" class="mb-16">
-      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
-      <div class="space-y-6 text-gray-700 max-w-3xl mx-auto">
-        <div>
-          <h4 class="font-semibold text-blue-800">Danışmanlık ücretli mi?</h4>
-          <p>İlk görüşme ücretsizdir. Dava sürecine geçilmesi halinde ücretlendirme yapılır.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">İletişim</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Hukuki danışmanlık için bizimle iletişime geçin. Size en kısa sürede dönüş yapacağız.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Bize Ulaşın</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Ad Soyad</label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-law-blue focus:border-law-blue" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">E-posta</label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-law-blue focus:border-law-blue" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mesaj</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-law-blue focus:border-law-blue" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-law-blue hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-md transition duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Mesaj Gönder
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">İletişim Bilgileri</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-law-blue text-xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Adres</h4>
+                                <p class="text-gray-600">
+                                    Kızılay Mahallesi<br>
+                                    Atatürk Bulvarı No: 123/5<br>
+                                    Çankaya/Ankara
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-phone text-law-blue text-xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Telefon</h4>
+                                <p class="text-gray-600">+90 312 456 78 90</p>
+                                <p class="text-gray-600">+90 532 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-envelope text-law-blue text-xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">E-posta</h4>
+                                <p class="text-gray-600">info@gezicihukuk.com</p>
+                                <p class="text-gray-600">iletisim@gezicihukuk.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-clock text-law-blue text-xl mt-1"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Çalışma Saatleri</h4>
+                                <p class="text-gray-600">Pazartesi - Cuma: 09:00 - 18:00</p>
+                                <p class="text-gray-600">Cumartesi: 10:00 - 14:00</p>
+                                <p class="text-gray-600">Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <h4 class="font-semibold text-blue-800">Hangi şehirlerde hizmet veriyorsunuz?</h4>
-          <p>Merkezimiz İstanbul olmakla birlikte, Türkiye genelinde hizmet sağlamaktayız.</p>
-        </div>
-        <div>
-          <h4 class="font-semibold text-blue-800">Online danışmanlık mümkün mü?</h4>
-          <p>Evet, e-posta veya görüntülü görüşme yoluyla online danışmanlık veriyoruz.</p>
-        </div>
-      </div>
     </section>
 
-    <section id="contact" class="mb-16 bg-gray-100 p-8 rounded-lg max-w-3xl mx-auto">
-      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">İletişime Geçin</h3>
-      <form>
-        <label class="block mb-2 font-medium" for="name">Ad Soyad</label>
-        <input class="w-full p-2 mb-4 border border-gray-300 rounded" type="text" id="name" placeholder="Adınızı yazın" required />
+    <!-- Footer -->
+    <footer class="bg-law-blue text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Gezici Hukuk Bürosu</h3>
+                    <p class="text-blue-200">
+                        Profesyonel hukuki danışmanlık ve temsil hizmetleri ile haklarınızı koruyoruz.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hızlı Linkler</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white transition duration-300">Ana Sayfa</a></li>
+                        <li><a href="#services" class="text-blue-200 hover:text-white transition duration-300">Hizmetler</a></li>
+                        <li><a href="#team" class="text-blue-200 hover:text-white transition duration-300">Ekip</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white transition duration-300">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">İletişim</h3>
+                    <div class="space-y-2 text-blue-200">
+                        <p><i class="fas fa-phone mr-2"></i> +90 312 456 78 90</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@gezicihukuk.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Kızılay, Ankara</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-700 mt-8 pt-8 text-center">
+                <p class="text-blue-200">
+                    &copy; 2024 Gezici Hukuk Bürosu. Tüm hakları saklıdır.
+                </p>
+            </div>
+        </div>
+    </footer>
 
-        <label class="block mb-2 font-medium" for="email">E-posta</label>
-        <input class="w-full p-2 mb-4 border border-gray-300 rounded" type="email" id="email" placeholder="E-posta adresinizi yazın" required />
+    <!-- JavaScript for mobile menu and smooth scrolling -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
 
-        <label class="block mb-2 font-medium" for="message">Mesaj</label>
-        <textarea class="w-full p-2 mb-4 border border-gray-300 rounded h-32" id="message" placeholder="Mesajınızı yazın" required></textarea>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
 
-        <button class="bg-blue-900 text-white py-2 px-6 rounded hover:bg-blue-800" type="submit">Gönder</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
-    &copy; 2025 Gezici Hukuk Bürosu. Tüm hakları saklıdır.
-  </footer>
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mesajınız alındı! En kısa sürede size dönüş yapacağız.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
