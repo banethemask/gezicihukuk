@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gezici Hukuk Bürosu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+  <header class="bg-white shadow-md py-4">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-900">Gezici Hukuk Bürosu</h1>
+      <nav class="space-x-6 text-gray-700 font-medium">
+        <a href="#home" class="hover:text-blue-900">Anasayfa</a>
+        <a href="#services" class="hover:text-blue-900">Hizmetler</a>
+        <a href="#team" class="hover:text-blue-900">Kadromuz</a>
+        <a href="#faq" class="hover:text-blue-900">SSS</a>
+        <a href="#contact" class="hover:text-blue-900">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+    <section id="home" class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold text-blue-900 mb-6">Gezici Hukuk Bürosu</h2>
+      <p class="text-lg mb-6">
+        Adaletin ve güvenin adresi. Avukatlarımız <strong>Fatma Aleyna Çıray</strong> ve <strong>Heybet Gezici</strong> ile bireysel ve kurumsal davalarınızda yanınızdayız.
+      </p>
+      <a href="#contact" class="inline-block bg-blue-900 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-800 transition">
+        Ücretsiz Danışmanlık Alın
+      </a>
+    </section>
+
+    <section id="services" class="mb-16">
+      <h3 class="text-3xl font-bold text-blue-900 mb-8">Hizmet Alanlarımız</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700">
+        <div>
+          <h4 class="text-xl font-semibold text-blue-800">Boşanma ve Aile Hukuku</h4>
+          <p>Anlaşmalı ve çekişmeli boşanma davaları, nafaka, velayet ve mal paylaşımı konularında güçlü temsil.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-blue-800">Ceza Hukuku</h4>
+          <p>Suç isnadı karşısında profesyonel savunma. Tutukluluk itirazları, ceza davası süreç takibi.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-blue-800">Ticaret ve Şirketler Hukuku</h4>
+          <p>Sözleşme hazırlığı, şirket birleşmeleri, ticari alacak davaları ve danışmanlık hizmetleri.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold text-blue-800">İcra ve İflas Hukuku</h4>
+          <p>Alacak tahsili, icra takibi, haciz işlemleri ve itirazların kaldırılması süreçleri.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="mb-16 bg-gray-100 p-8 rounded-lg">
+      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Avukat Kadromuz</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold text-blue-800">Av. Fatma Aleyna Çıray</h4>
+          <p>Aile, ceza ve ticaret hukuku alanlarında uzmanlaşmış; müvekkillerine yüksek hassasiyetle yaklaşan çözüm odaklı bir avukat.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold text-blue-800">Av. Heybet Gezici</h4>
+          <p>İcra, iflas ve sözleşmeler hukuku üzerine derin tecrübelere sahip olup dava takibinde stratejik yaklaşımıyla öne çıkar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="mb-16">
+      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">Sıkça Sorulan Sorular</h3>
+      <div class="space-y-6 text-gray-700 max-w-3xl mx-auto">
+        <div>
+          <h4 class="font-semibold text-blue-800">Danışmanlık ücretli mi?</h4>
+          <p>İlk görüşme ücretsizdir. Dava sürecine geçilmesi halinde ücretlendirme yapılır.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-blue-800">Hangi şehirlerde hizmet veriyorsunuz?</h4>
+          <p>Merkezimiz İstanbul olmakla birlikte, Türkiye genelinde hizmet sağlamaktayız.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-blue-800">Online danışmanlık mümkün mü?</h4>
+          <p>Evet, e-posta veya görüntülü görüşme yoluyla online danışmanlık veriyoruz.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-16 bg-gray-100 p-8 rounded-lg max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold text-blue-900 mb-8 text-center">İletişime Geçin</h3>
+      <form>
+        <label class="block mb-2 font-medium" for="name">Ad Soyad</label>
+        <input class="w-full p-2 mb-4 border border-gray-300 rounded" type="text" id="name" placeholder="Adınızı yazın" required />
+
+        <label class="block mb-2 font-medium" for="email">E-posta</label>
+        <input class="w-full p-2 mb-4 border border-gray-300 rounded" type="email" id="email" placeholder="E-posta adresinizi yazın" required />
+
+        <label class="block mb-2 font-medium" for="message">Mesaj</label>
+        <textarea class="w-full p-2 mb-4 border border-gray-300 rounded h-32" id="message" placeholder="Mesajınızı yazın" required></textarea>
+
+        <button class="bg-blue-900 text-white py-2 px-6 rounded hover:bg-blue-800" type="submit">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    &copy; 2025 Gezici Hukuk Bürosu. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
